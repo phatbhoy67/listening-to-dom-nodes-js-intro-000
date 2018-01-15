@@ -49,11 +49,16 @@
 }
 
 const input = document.querySelector('input');
- 
+
+// prevent G key press
 input.addEventListener('keydown', function(e) {
   if (e.which === 71) {
     return e.preventDefault();
   }
+});
+
+input.addEventListener('keydown', function(e) {
+  console.log(e.which);
 });
     </script>
   </body>
